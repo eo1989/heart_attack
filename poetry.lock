@@ -362,6 +362,18 @@ format = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validat
 format_nongpl = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validator", "rfc3986-validator (>0.1.0)", "uri-template", "webcolors (>=1.11)"]
 
 [[package]]
+name = "jupyter-bokeh"
+version = "3.0.4"
+description = "A Jupyter extension for rendering Bokeh content."
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+bokeh = ">=2.4.0"
+ipywidgets = ">=7.6.0"
+
+[[package]]
 name = "jupyter-client"
 version = "7.0.6"
 description = "Jupyter protocol implementation and client libraries"
@@ -1053,7 +1065,7 @@ scikit-learn = ["scikit-learn"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "e1bf1e8de4c021348068aa5cae18c4c72ee2bfadca8594c560c4f1c022b24e0a"
+content-hash = "4c62fa042ecc13aac4ad498f8111726e6b9b7fe5faef7220c9a7533fa48e25fa"
 
 [metadata.files]
 appnope = [
@@ -1280,6 +1292,9 @@ joblib = [
 jsonschema = [
     {file = "jsonschema-4.2.1-py3-none-any.whl", hash = "sha256:2a0f162822a64d95287990481b45d82f096e99721c86534f48201b64ebca6e8c"},
     {file = "jsonschema-4.2.1.tar.gz", hash = "sha256:390713469ae64b8a58698bb3cbc3859abe6925b565a973f87323ef21b09a27a8"},
+]
+jupyter-bokeh = [
+    {file = "jupyter_bokeh-3.0.4.tar.gz", hash = "sha256:ba3b032f52a039d9e5ed8f6c50f3f9a00dcb97005871c24673a3b3a05465aef5"},
 ]
 jupyter-client = [
     {file = "jupyter_client-7.0.6-py3-none-any.whl", hash = "sha256:074bdeb1ffaef4a3095468ee16313938cfdc48fc65ca95cc18980b956c2e5d79"},
